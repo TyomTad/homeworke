@@ -1,0 +1,81 @@
+Խնդիր 1. 
+#include <stdio.h>
+
+int main()
+{
+    char c = 0;
+
+    printf("Enter the font: ");
+    scanf(" %c", &c);
+
+    while(!( c >= 'A' && c <= 'Z' || c>='a' && c<='z')){
+        printf("Enter the font: ");
+        scanf(" %c", &c);
+
+    }
+
+    if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
+       c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
+        printf("%c is a vowel.\n", c);
+        else
+        printf("%c is a consonant.\n", c);
+    return 0;
+
+}
+
+
+
+Խնդիր 2.
+#include <stdio.h>
+
+int main()
+{
+        int x = 0;
+        int y = 0;
+        printf("Enter the two noumber: ");
+        scanf("%d%d", &x,&y);
+
+        if(x > y)
+        printf("%d is bigger. \n", x);
+        else
+        printf("%d is bigger. \n", y);
+
+
+        return 0;
+
+
+}
+
+
+Խնդիր 3.
+#include <stdio.h>
+
+int main()
+{
+        int x = 0;
+        int y = 0;
+        int z = 0;
+        printf("Enter the three noumber: ");
+        scanf("%d%d%d", &x, &y, &z);
+
+        if((x == y || x == z || y == z) && (x != y || y != z)){
+                if(x == y && x > z)
+                printf("%d is the biggest\n", x);
+                else if(x < z)
+                printf("%d is the biggest\n", z);
+                else if(x == z && x > y)
+                printf("%d is the biggest\n", x);
+                else if(x < y)
+                printf("%d is the biggest\n", y);
+                else if(y == z && y > x)
+                printf("%d is the biggest\n", y);
+                else if(y < x)
+                printf("%d is the biggest\n", x);
+        }else
+        printf("Folse \n");
+
+
+        return 0;
+
+
+}
